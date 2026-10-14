@@ -1,8 +1,8 @@
-# DNS Lookup API: Live, Historical and Reverse DNS Records in Python
+# DNS Lookup API: Live, Historical and Reverse DNS Records
 
-Get the DNS records of any domain from Python with the [WhoisFreaks DNS Lookup API](https://whoisfreaks.com/products/dns-checker-api): A, AAAA, MX, NS, CNAME, SOA, TXT and SPF, one record type at a time or all of them in one request. The same API key gives you historical DNS (how a domain's records changed over time), reverse DNS (which domains point to an IP address or mail server) and bulk DNS lookups.
+Get the DNS records of any domain with the [WhoisFreaks DNS Lookup API](https://whoisfreaks.com/products/dns-checker-api), a REST API you can call from any language: A, AAAA, MX, NS, CNAME, SOA, TXT and SPF, one record type at a time or all of them in one request. The same API key gives you historical DNS (how a domain's records changed over time), reverse DNS (which domains point to an IP address or mail server) and bulk DNS lookups.
 
-This page uses the official [Python SDK](https://github.com/WhoisFreaks/whoisfreaks-python).
+This page uses plain HTTP and the official [Python SDK](https://github.com/WhoisFreaks/whoisfreaks-python). Ready-to-run scripts in cURL, Python and Node.js are in [`examples/`](examples/).
 
 A live DNS lookup for `whoisfreaks.com` with `type=all` returns the response below. It has 16 records; one of each type is shown, each with every field the API returns for that type.
 
@@ -520,7 +520,7 @@ Full pricing: [credit usage](https://whoisfreaks.com/documentation/credit-usage)
 ## FAQ
 
 **Is there a free DNS lookup API?**
-Yes. A free WhoisFreaks account includes 500 credits with no credit card, which covers 500 live DNS lookups.
+Yes. A [free WhoisFreaks account](https://whoisfreaks.com/products/whois-api/free-whois-api) includes 500 credits with no credit card, which covers 500 live DNS lookups. The credits never expire, and free keys can be used commercially.
 
 **Can I get every record type in one call?**
 Yes. Pass `"all"` as the record type.
